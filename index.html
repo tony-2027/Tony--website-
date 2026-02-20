@@ -1,4 +1,4 @@
-Copy code
+ code
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,13 +8,14 @@ Copy code
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            text-align: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
+            text-align: center;
         }
 
-        .container {
-            padding: 50px 20px;
+        header {
+            padding: 40px 20px;
+            animation: fadeIn 2s ease-in-out;
         }
 
         h1 {
@@ -25,41 +26,64 @@ Copy code
             font-size: 18px;
         }
 
+        .section {
+            padding: 30px 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+        }
+
         .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
+            margin-top: 15px;
+            padding: 10px 20px;
             background: white;
             color: #333;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 20px;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #333;
-            color: white;
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 30px;
+            padding: 15px;
             font-size: 14px;
-            opacity: 0.8;
+            background: rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Welcome to Tony's Website 🚀</h1>
-        <p>This website is created by Tony using mobile.</p>
-        <a href="#" class="btn">Click Me</a>
+<header>
+    <h1>Welcome to Tony's Website 🚀</h1>
+    <p>Created using mobile & GitHub Pages</p>
+</header>
+
+<div class="section">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>Hi, I'm Tony. I'm learning web development and building websites.</p>
     </div>
 
-    <footer>
-        © 2026 Tony | All Rights Reserved
-    </footer>
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: tony@email.com</p>
+        <a href="#" class="btn">Message Me</a>
+    </div>
+</div>
+
+<footer>
+    © 2026 Tony | All Rights Reserved
+</footer>
 
 </body>
 </html>
