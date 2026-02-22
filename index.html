@@ -1,7 +1,13 @@
 code
 <!DOCTYPE html>
 <html>
-<head>
+<head<h2>My Dress Collection</h2>
+
+<div class="gallery">
+  <div class="card">Design 1</div>
+  <div class="card">Design 2</div>
+  <div class="card">Design 3</div>
+</div>
 <title>Tony Website</title>
 <style>.navbar {
   background-color: #ff4d6d;
@@ -20,7 +26,26 @@ code
 }
 body { font-family: Arial; text-align: center; padding: 50px; }
 a { text-decoration: none; color: white; background: blue; padding: 10px 20px; border-radius: 5px; }
-</style>
+</style>HTML
+Copy code
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 <code
 <style>
 a {
