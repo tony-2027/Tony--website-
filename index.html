@@ -1,7 +1,7 @@
 code
 <!DOCTYPE html>
 <html>
-<head<h2>My Dress Collection</h2>
+<head<h2>My Dress Collection</h2><meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div class="gallery">
   <div class="card">Design 1</div>
@@ -53,7 +53,21 @@ Copy code
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 <code
-<style>
+<style@media (max-width: 600px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+}
 a {
   text-decoration: none;
   background-color: #ff4d6d;
