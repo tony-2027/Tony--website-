@@ -73,14 +73,15 @@ Copy code
 .card:active img {
   transform: scale(1.15);
 code
+Copy code
 .card {
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:active {
-  transform: scale(0.95);
+  transform: scale(0.92);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-
 @media (max-width: 600px) {
   .gallery {
     flex-direction: column;
