@@ -72,6 +72,13 @@ overflow: hidden;.card img {
 Copy code
 .card:active img {
   transform: scale(1.15);
+code
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 600px) {
