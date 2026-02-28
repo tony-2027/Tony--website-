@@ -5,7 +5,25 @@ Copy code
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tony Website</title>
 
-<style>
+<stylecode
+.card {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.15);
+}
 body {
   background-color: #ffe6f0;
   font-family: Arial, sans-serif;
@@ -57,7 +75,22 @@ overflow: hidden;.card img {
   .gallery {
     flex-direction: column;
     align-items: center;
+  code
+.gallery {
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+✅ Step 3
 }
 </style>
 </head>
