@@ -4,26 +4,7 @@ Copy code
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tony Website</title>
-
-<stylecodecode
-.card {
-  width: 150px;
-  height: 150px;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: 0.2s;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Mobile tap effect */
-.card:active {
-  background-color: pink;
-}
+<style>
 body {
   background-color: #ffe6f0;
   font-family: Arial, sans-serif;
@@ -52,6 +33,7 @@ body {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  animation: fadeIn 1.2s ease-in;
 }
 
 .card {
@@ -59,36 +41,23 @@ body {
   height: 150px;
   background-color: white;
   border-radius: 15px;
-  
-overflow: hidden;.card img {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-  
 
 .card:hover {
   transform: scale(1.1);
-Copy code
-.card:active img {
-  transform: scale(1.15);
-code
-Copy code
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:active {
-  transform: scale(0.92);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-@media (max-width: 600px) {
-  .gallery {
-    flex-direction: column;
-    align-items: center;
-  code
-.gallery {
-  animation: fadeIn 1.2s ease-in;
+  transform: scale(0.95);
+  background-color: pink;
 }
 
 @keyframes fadeIn {
@@ -101,8 +70,14 @@ Copy code
     transform: translateY(0);
   }
 }
-✅ Step 3
+
+@media (max-width: 600px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+</style>
 </style>
 </head>
 
