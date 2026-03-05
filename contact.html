@@ -2,7 +2,24 @@
 <html>
 <head>
 <title>Contact</title>
-<style>
+<style>form {
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 250px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+button {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -27,7 +44,17 @@ button {
 </head>
 
 <body>
+<h1>Contact Me</h1>
 
+<form>
+  <input type="text" placeholder="Your Name"><br><br>
+
+  <input type="email" placeholder="Your Email"><br><br>
+
+  <textarea placeholder="Your Message"></textarea><br><br>
+
+  <button type="submit">Send Message</button>
+</form>
 <h1>Contact Me</h1>
 
 <input type="text" placeholder="Your Name"><br>
