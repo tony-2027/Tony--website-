@@ -77,7 +77,29 @@ body {
     align-items: center;
   }
 }
-</style>
+</style>.products{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:30px;
+}
+
+.product{
+  background:white;
+  padding:10px;
+  border-radius:10px;
+  width:200px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.product img{
+  width:100%;
+  border-radius:10px;
+}
+
+.product:hover{
+  transform:scale(1.05);
+}
 </style>
 </head>
 
@@ -85,7 +107,27 @@ body {
   <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
-</div><h2>My Dress Collection</h2>
+</div><h2>My Dress Collection <div class="products">
+
+  <div class="product">
+    <img src="https://picsum.photos/300?fashion1">
+    <h3>Summer Dress</h3>
+    <p>Price: ₹1200</p>
+  </div>
+
+  <div class="product">
+    <img src="https://picsum.photos/300?fashion2">
+    <h3>Traditional Kurti</h3>
+    <p>Price: ₹1500</p>
+  </div>
+
+  <div class="product">
+    <img src="https://picsum.photos/300?fashion3">
+    <h3>Party Wear Dress</h3>
+    <p>Price: ₹2000</p>
+  </div>
+
+</div></h2>
 <div class="gallery">
 
   <div class="card">
