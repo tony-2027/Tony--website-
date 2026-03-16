@@ -77,14 +77,24 @@ body {
     align-items: center;
   }
 }
-</style>.products{
+</style>.products<div class="product">
+  <img src="https://picsum.photos/300?fashion1">
+  <h3>Summer Dress</h3>
+  <p>Price: ₹1200</p>
+  <button class="buy-btn">Buy Now</button>
+</div>{
   display:flex;
   justify-content:center;
   gap:20px;
   margin-top:30px;
 }
 
-.product{
+.product<div class="product">
+  <img src="https://picsum.photos/300?fashion1">
+  <h3>Summer Dress</h3>
+  <p>Price: ₹1200</p>
+  <button class="buy-btn">Buy Now</button>
+</div>{
   background:white;
   padding:10px;
   border-radius:10px;
@@ -100,7 +110,19 @@ body {
 .product:hover{
   transform:scale(1.05);
 }
-</style>
+</style>.buy-btn{
+  background-color:#ff4d6d;
+  color:white;
+  border:none;
+  padding:8px 15px;
+  border-radius:6px;
+  margin-top:8px;
+  cursor:pointer;
+}
+
+.buy-btn:hover{
+  background-color:#e03e5d;}
+
 </head>
 
 <body> <div class="navbar">
